@@ -43,7 +43,7 @@ while(True):
 
         color = (255, 0, 0) #BRG 0-255
         stroke= 2
-        end_cord_x =x+w
+        end_cord_x =x+w 
         end_cord_y = y+h
         cv2.rectangle(frame,(x,y),(end_cord_x, end_cord_y), color, stroke)
         #eyes = eye_cascade.detectMultiScale(roi_gray )
@@ -57,5 +57,5 @@ while(True):
 
 #print(cv2.__file__)
 #When everything done, relese the capture
-cap.release()
+cap.release(5)
 cv2.destroyAllWindows()
